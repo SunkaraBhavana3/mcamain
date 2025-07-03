@@ -10,6 +10,25 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
   <style>
+    .navbar-custom {
+      background-color: white;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+      color: #333;
+    }
+
+    .navbar-brand img {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    .navbar-nav .nav-link {
+      font-weight: 500;
+      color: #333 !important;
+    }
     body {
       background-color: #f9f9f9;
       font-family: 'Segoe UI', sans-serif;
@@ -53,18 +72,17 @@
 <body>
 
   <!-- Navigation Bar -->
-    <!-- Responsive Bootstrap Navbar -->
-  <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm sticky-top">
-    <div class="container">
-      <a class="navbar-brand d-flex align-items-center" href="#">
-        <img src="logo.png" alt="SDCIT Logo" height="40" class="me-2">
-        <strong>SDCIT</strong>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
+  <!-- Navigation Bar -->
+<nav class="navbar navbar-expand-md bg-white shadow-sm sticky-top">
+  <div class="container-fluid px-4">
+    <a class="navbar-brand d-flex align-items-center fw-bold" href="#">
+      <img src="logo.png" alt="SDCIT Logo" height="40" class="me-2"> SDCIT
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+      <ul class="navbar-nav">
         <li class="nav-item"><a class="nav-link" href="https://sunkarabhavana3.github.io/homepage/">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="https://sunkarabhavana3.github.io/about/">About</a></li>
         <li class="nav-item"><a class="nav-link" href="https://sunkarabhavana3.github.io/group/">Groups</a></li>
@@ -73,9 +91,9 @@
         <li class="nav-item"><a class="nav-link" href="https://sunkarabhavana3.github.io/about/#testimonials">Testimonials</a></li>
         <li class="nav-item"><a class="nav-link" href="https://sunkarabhavana3.github.io/contact/">Contact</a></li>
       </ul>
-      </div>
     </div>
-  </nav>
+  </div>
+</nav>
 
   <!-- Hero Section -->
   <div class="container mt-4">
